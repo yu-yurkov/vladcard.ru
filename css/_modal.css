@@ -1,0 +1,27 @@
+.modal{
+    background: aquamarine;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top:calc(50vh - 200px);
+    left:calc(50vw - 200px);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.dialog{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.dialog>div {
+    display:none;
+}
+
+.dialog .dialog__start{
+    border: 1px solid #000;
+    display: block;
+}

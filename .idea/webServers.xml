@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2e82359a-6b56-4962-a47a-bb6f24b9600d" name="ajax" url="http://localhost">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="e8382f6d-b8cb-45d2-9496-bef0dd2b200a" name="server" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="C:\ajax" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

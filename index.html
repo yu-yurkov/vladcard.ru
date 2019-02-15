@@ -8,20 +8,58 @@
 </head>
 <body>
 
-<h1>Hello world!</h1>
+<div class="main">
 
+    <header class="header">
 
-<div class="modal">
-    <div class="dialog">
-        <div class="dialog__start">
-            <h3>обратная связь</h3>
-            <button id="feedbackSend">отправить запрос</button>
+        <div class="wrap">
+            <div class="column logo"><a href="#"><img src="i/logo.png" alt="Владкард" /></a></div>
+
+            <ul class="menu column">
+                <li class="drop-down"><a href="#">Услуги</a>
+                    <ul>
+                        <li><a href="#">Пластиковые карты</a></li>
+                        <li><a href="#">Магниты</a></li>
+                        <li><a href="#">Бейджи</a></li>
+                        <li><a href="#">Номерки, шильды</a></li>
+                    </ul>
+                </li>
+                <li class="drop-down"><a href="#">Цены</a>
+                    <ul>
+                        <li><a href="#">Пластиковые карты</a></li>
+                        <li><a href="#">Магниты</a></li>
+                        <li><a href="#">Бейджи</a></li>
+                        <li><a href="#">Номерки, шильды</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+
+            <div class="column phone"><span class="city">г. Владивосток</span> <a href="tel:+74322488471">+7 (423) 2-488-471</a></div>
+            <div class="column callback"><a href="#" id="callback">Связаться с нами</a></div>
+            <div class="column login"><a href="#">вход</a></div>
         </div>
-        <div class="dialog__loader">лоадер</div>
-        <div class="dialog__complete_success">успех</div>
-        <div class="dialog__complete_error">ошибка</div>
+        
+    </header>
+
+    <h1>Hello world!</h1>
+
+
+    <div class="modal">
+        <div class="dialog">
+            <div class="dialog__start">
+                <h3>обратная связь</h3>
+                <button id="feedbackSend">отправить запрос</button>
+            </div>
+            <div class="dialog__loader">лоадер</div>
+            <div class="dialog__complete_success">успех</div>
+            <div class="dialog__complete_error">ошибка</div>
+        </div>
     </div>
+
 </div>
+
 
 
 
@@ -55,6 +93,7 @@
                 $('.dialog .dialog__complete_error').show();
                 console.log('ошибка запроса')
             }
+
         });
 
     });

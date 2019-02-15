@@ -24,14 +24,7 @@
                         <li><a href="#">Номерки, шильды</a></li>
                     </ul>
                 </li>
-                <li class="drop-down"><a href="#">Цены</a>
-                    <ul>
-                        <li><a href="#">Пластиковые карты</a></li>
-                        <li><a href="#">Магниты</a></li>
-                        <li><a href="#">Бейджи</a></li>
-                        <li><a href="#">Номерки, шильды</a></li>
-                    </ul>
-                </li>
+                <li><a href="#">Стоимость</a></li>
                 <li><a href="#">Блог</a></li>
                 <li><a href="#">Контакты</a></li>
             </ul>
@@ -57,11 +50,7 @@
             </div>
             <div class="dialog__loader">лоадер</div>
             <div class="dialog__complete_success">
-                успех
-                <br>
-                <small>окно автоматически закроется через 3 секунды</small>
-
-
+                данные успешно отправлены
             </div>
             <div class="dialog__complete_error">ошибка</div>
         </div>
@@ -121,7 +110,7 @@
                     $('.modal').hide();
                     dialog('.dialog__start');
                     $(".dialog input[type='tel']").val('');
-                }, 3000);
+                }, 5000);
             }
 
         });

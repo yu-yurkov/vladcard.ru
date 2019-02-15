@@ -37,7 +37,7 @@
             </ul>
 
             <div class="column phone"><span class="city">г. Владивосток</span> <a href="tel:+74322488471">+7 (423) 2-488-471</a></div>
-            <div class="column callback"><a href="#" id="callback">Связаться с нами</a></div>
+            <div class="column callback"><a href="#">Связаться с нами</a></div>
             <div class="column login"><a href="#">вход</a></div>
         </div>
         
@@ -45,18 +45,29 @@
 
     <h1>Hello world!</h1>
 
-
+    <div id="overlay"></div>
     <div class="modal">
         <div class="dialog">
             <div class="dialog__start">
                 <h3>обратная связь</h3>
-                <button id="feedbackSend">отправить запрос</button>
+                <form class="form feedback">
+                    <input type="tel" name="tel">
+                    <button type="submit">отправить запрос</button>
+                </form>
             </div>
             <div class="dialog__loader">лоадер</div>
-            <div class="dialog__complete_success">успех</div>
+            <div class="dialog__complete_success">
+                успех
+                <br>
+                <small>окно автоматически закроется через 3 секунды</small>
+
+
+            </div>
             <div class="dialog__complete_error">ошибка</div>
         </div>
     </div>
+
+
 
 </div>
 
@@ -65,36 +76,57 @@
 
 <script>
 
+    $('body').on('click','.callback', function(e){
+        $('.overlay').show();
+        $('.modal').show();
+        e.preventDefault();
+    });
 
-    $('body').on('click','#feedbackSend', function(){
+
+
+    $('body').on('submit','.form.feedback', function(e){
+
+        let formData = $(this).serialize();
 
         $.ajax({
 
             type: 'post',
             dataType: 'html',
             url: 'ajax/callback',
+            data: formData,
+
+
+        showDialog: function(dialog){
+                $('.dialog>div').hide();
+                $('.dialog ' + dialog).show();
+                console.log("show:" + dialog);
+            },
 
             beforeSend: function(){
-                $('.dialog>div').hide();
-                $('.dialog .dialog__loader').show();
-                console.log('показываем loader');
+                this.showDialog('.dialog__loader');
             },
-            success: function(data){
-                $('.dialog>div').hide();
-                $('.dialog .dialog__complete_success').show();
-                console.log(data);
 
+            success: function(data){
+                this.showDialog('.dialog__complete_success');
+                console.log(data);
+            },
+
+            error: function () {
+                this.showDialog('.dialog__complete_error');
+            },
+
+            complete: function(){
+                var dialog = this.showDialog;
                 setTimeout(function () {
                     $('.modal').hide();
-                }, 1000);
-            },
-            error: function () {
-                $('.dialog>div').hide();
-                $('.dialog .dialog__complete_error').show();
-                console.log('ошибка запроса')
+                    dialog('.dialog__start');
+                    $(".dialog input[type='tel']").val('');
+                }, 3000);
             }
 
         });
+
+        e.preventDefault();
 
     });
 

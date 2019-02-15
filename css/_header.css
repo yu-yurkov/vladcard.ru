@@ -15,7 +15,6 @@ a:hover{
 
 
 .header{
-
     height: 100px;
     box-sizing: border-box;
     background-color: #fff;
@@ -125,7 +124,7 @@ a:hover{
 }
 
 .header .city{
-    font-family: 'Roboto Light';
+    font-weight: 300;
 }
 
 .header .phone a{
@@ -137,7 +136,7 @@ a:hover{
 
 .header .callback a{
     color: var(--link);
-    font-family: 'Roboto Light';
+    font-weight: 300;
     border-bottom: 1px dashed var(--link);
     white-space: pre;
     text-decoration: none;

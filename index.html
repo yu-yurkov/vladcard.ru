@@ -129,13 +129,23 @@
 
             <div class="dialog__complete_success">
 
-                <div class="complete">
-                    <p>Запрос удачно отправлен</p>
+                <div class="complete_mess">
+                    <p>Запрос удачно отправлен <br>
+                        <span>Мы перезвоним вам в ближайшее время</span>
+                    </p>
                 </div>
 
             </div>
 
-            <div class="dialog__complete_error">ошибка</div>
+            <div class="dialog__complete_error">
+
+                <div class="complete_mess">
+                    <p>Не удалось отправить данные<br>
+                        <span>Поробуйте еще раз или свяжитесь с нами другим способом</span>
+                    </p>
+                </div>
+
+            </div>
         </div>
     </div>
 
@@ -196,7 +206,7 @@
                     $('.modal, .overlay').hide();
                     dialog('.dialog__start');
                     $(".dialog input[type='tel']").val('');
-                }, 5000);
+                }, 2500);
             }
 
         });

@@ -78,18 +78,52 @@
     animation-delay: 1s;
 }
 
-.modal .complete{
-    display: none;
+.dialog .complete_mess{
     margin: 0 auto;
 }
 
-.modal .complete p{
-
+.dialog .complete_mess p{
+    text-align: center;
     font-size: calc((21/16)*1rem);
     color: #808080;
-    background: url("../i/ok.png") no-repeat top center;
     padding-top: 70px;
+    position: relative;
 }
+
+.dialog .complete_mess p span{
+    font-size: calc((15/16)*1rem);
+}
+
+.dialog .complete_mess p:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 25px);
+    background-color:limegreen;
+    background-image: url('./icon/tick.svg');
+    background-size: 25px auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    0px 0px 20px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px 0px 20px 0px rgba(50, 50, 50, 0.5);
+    border: 1px solid #fff;
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.dialog .dialog__complete_error .complete_mess p:before{
+    background-color: red;
+    background-image: url('./icon/cross.svg');
+}
+
+
+
 
 
 /* loader */

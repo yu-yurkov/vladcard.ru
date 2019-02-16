@@ -5,6 +5,9 @@
     <title>Изготовление пластиковых карт во Владивостоке</title>
     <link rel="stylesheet" href="css/style.css" media="all">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/fotorama.js"></script>
+    <script src="js/js.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
 </head>
 <body>
 
@@ -36,7 +39,58 @@
         
     </header>
 
-    <h1>Hello world!</h1>
+
+    <div class="view">
+
+        <section class="view-main">
+            <div class="wrap">
+
+
+                    <div class="first-screen block">
+                        <h1>Изготовление пластиковых карт</h1>
+                        <p class="fs-descript">Для привлечения и удержания клиентов вашего бизнеса.
+                            Изготовим качественно и в срок. Любой тираж. </p>
+
+                        <ul class="anchors">
+                            <li><a href="#types">Виды пластиковых карт</a></li>
+                            <li><a href="#price">Расчитать цену</a></li>
+                            <li><a href="#form">Отправить заявку</a></li>
+                        </ul>
+                    </div>
+
+                <div class="block fotorama" data-width="1000" data-ratio="1000/500" data-max-width="100%" data-nav="thumbs" data-autoplay="true">
+                    <img src="photo/photoframe/2.jpg" alt=""/>
+                    <img src="photo/photoframe/4.jpg" alt=""/>
+                    <img src="photo/photoframe/6.jpg" alt=""/>
+                    <img src="photo/photoframe/9.jpg" alt=""/>
+                    <img src="photo/photoframe/14.jpg" alt=""/>
+                    <img src="photo/photoframe/15.jpg" alt=""/>
+                    <img src="photo/photoframe/46.jpg" alt=""/>
+                    <img src="photo/photoframe/48.jpg" alt=""/>
+                    <img src="photo/photoframe/111.jpg" alt=""/>
+                    <img src="photo/photoframe/21.jpg" alt=""/>
+                    <img src="photo/photoframe/25.jpg" alt=""/>
+                    <img src="photo/photoframe/53.jpg" alt=""/>
+                    <img src="photo/photoframe/49.jpg" alt=""/>
+                    <img src="photo/photoframe/8.jpg" alt=""/>
+                    <img src="photo/photoframe/16.jpg" alt=""/>
+                    <img src="photo/photoframe/50.jpg" alt=""/>
+                </div>
+
+                <div class="block service-description">
+                    <p>Выполняем весь комплекс работ по изготовлению пластиковых карт, от разработки макета до конечной персонализации карт. Наше производство развивается уже более 10 лет. Накопленный опыт и производственные мощности позволяют нам производить пластиковые карты практически любой конфигурации сохраняя высокое качество и соблюдение заявленных сроков производства.</p>
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+
+
+    </div>
+
 
     <div id="overlay"></div>
     <div class="modal">
@@ -85,7 +139,7 @@
             data: formData,
 
 
-        showDialog: function(dialog){
+            showDialog: function(dialog){
                 $('.dialog>div').hide();
                 $('.dialog ' + dialog).show();
                 console.log("show:" + dialog);

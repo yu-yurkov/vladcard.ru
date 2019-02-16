@@ -1,0 +1,95 @@
+.block{
+    width: 1000px;
+    box-sizing: border-box;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.view .view-main .wrap{
+    display: block;
+}
+
+.view .first-screen.block{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.view .first-screen .fs-descript{
+    font-size: calc((30/16)*1rem);
+    font-weight: 300;
+    margin-top: 36px;
+    line-height: 40px;
+}
+
+.view h1{
+    font-family: 'Anglecia Pro Title';
+    font-size: calc((54/16)*1rem);
+    vertical-align: baseline;
+
+}
+
+.view .first-screen .anchors{
+    display:inline-flex;
+    border-radius: 5px;
+    margin: 35px auto 0 auto;
+    font-size: calc((18/16)*1rem);
+    font-weight: 300;
+}
+
+.view .first-screen .anchors a{
+    color: #000;
+    text-decoration: none;
+    display: block;
+    line-height: 48px;
+    padding: 0 20px;
+}
+
+.view .first-screen .anchors li{
+    border: 1px solid #ccc;
+    border-right: 0;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%,#f2f2f2 100%);
+    background: linear-gradient(to bottom, #ffffff 0%,#f2f2f2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 );
+}
+
+.view .first-screen .anchors li:hover{
+    background: #f2f2f2;
+}
+
+.first-screen .anchors li:last-child:hover {
+    background: #cc3300;
+}
+
+.view .first-screen .anchors li:first-child{
+    border-radius: 10px 0 0 10px;
+}
+
+.view .first-screen .anchors li:last-child{
+    border-radius: 0 10px 10px 0;
+    border: 1px solid #a50000;
+    background: #ff3333;
+    background: -moz-linear-gradient(top, #ff3333 0%, #cc3300 100%);
+    background: -webkit-linear-gradient(top, #ff3333 0%,#cc3300 100%);
+    background: linear-gradient(to bottom, #ff3333 0%,#cc3300 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3333', endColorstr='#cc3300',GradientType=0 );
+}
+.view .first-screen .anchors li:last-child a{
+    color: #fff;
+}
+
+.view .block.fotorama{
+    padding: 0;
+}
+
+.view .block.service-description{
+    border: 1px solid #e6e6e6;
+    margin-top: 48px;
+    padding: 40px 50px;
+    font-size: calc((20/16)*1rem);
+    font-weight: bold;
+    line-height: 32px;
+    text-align: justify;
+    background: #fff;
+}

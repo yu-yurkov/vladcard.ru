@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Anglecia Pro Title';
+    src: url('../fonts/anglecia.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body {
     height: 100%;
     font-family: roboto;
@@ -34,4 +41,27 @@ footer{
 .column{
     box-sizing: border-box;
     padding: 0 25px;
+}
+
+
+.crumbs{
+    font-size: calc((14/16)*1rem);
+    font-weight: 300;
+    color: #808080;
+}
+
+.crumbs ul{
+    padding: 20px 25px;
+}
+
+.crumbs li:before {
+    content: '\2192';
+    color: var(--grey50);
+    display: inline;
+    padding: 5px;
+}
+
+.crumbs li:first-child:before {
+    content: "";
+    padding: 0;
 }

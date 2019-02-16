@@ -92,20 +92,49 @@
     </div>
 
 
-    <div id="overlay"></div>
+
+    <div class="overlay"></div>
     <div class="modal">
         <div class="dialog">
             <div class="dialog__start">
-                <h3>обратная связь</h3>
-                <form class="form feedback">
-                    <input type="tel" name="tel">
-                    <button type="submit">отправить запрос</button>
+
+                <h3>Хотите, мы перезвоним вам
+                и ответим на интересующие
+                вас вопросы?</h3>
+
+                <form action="#" class="form feedback">
+                    <div class="form-group">
+                        <label for="tel" class="label">Введите ваш телефон:</label>
+                        <input type="tel" id="tel" name="tel" required="required">
+                    </div>
+
+                    <div class="submit-button">
+                        <input type="submit" name="send-form" class="button submit" value="Жду звонка">
+                    </div>
                 </form>
+
             </div>
-            <div class="dialog__loader">лоадер</div>
+
+            <div class="dialog__loader">
+
+                <div class="lContainer">
+                    <div class="item-1"></div>
+                    <div class="item-2"></div>
+                    <div class="item-3"></div>
+                    <div class="item-4"></div>
+                    <div class="item-5"></div>
+                </div>
+
+            </div>
+
             <div class="dialog__complete_success">
-                данные успешно отправлены
+
+                <div class="complete">
+                    <p>Запрос удачно отправлен</p>
+                </div>
+
             </div>
+
             <div class="dialog__complete_error">ошибка</div>
         </div>
     </div>
@@ -120,9 +149,12 @@
 <script>
 
     $('body').on('click','.callback', function(e){
-        $('.overlay').show();
-        $('.modal').show();
+        $('.overlay, .modal').show();
         e.preventDefault();
+    });
+
+    $('body').on('click', '.overlay', function(e){
+        $('.overlay, .modal').hide();
     });
 
 
@@ -161,7 +193,7 @@
             complete: function(){
                 var dialog = this.showDialog;
                 setTimeout(function () {
-                    $('.modal').hide();
+                    $('.modal, .overlay').hide();
                     dialog('.dialog__start');
                     $(".dialog input[type='tel']").val('');
                 }, 5000);

@@ -6,7 +6,7 @@ $( document ).ready(function() {
 
 
     // валидация формы обратной связи
-    $('body').on('click','#sendFeedback', function(e){
+    $('body').on('click','.form .submit', function(e){
 
         var form;
         var required;
@@ -21,10 +21,11 @@ $( document ).ready(function() {
             var fieldParent = field.parent();
             var fieldLabel = field.siblings('label');
 
-            // проверяем заполнение полей
+            //проверяем заполнение полей
             if(field.val() == 0){
                 if(fieldParent.find(".error-notify").length == 0){
-                    $(element).parent().append('<p class="error-notify">Необходимо заполнить поле "'+ fieldLabel.text() +'"</p>');
+                    //$(element).parent().append('<p class="error-notify">необходимо заполнить поле "'+ fieldLabel.text() +'"</p>');
+                    $(element).parent().append('<p class="error-notify">необходимо заполнить поле</p>');
                 }
                 counter++;
             }else{

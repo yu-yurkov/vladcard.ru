@@ -54,6 +54,7 @@
 .dialog .dialog__start .form .label{
     font-size: calc((16/16)*1rem);
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .dialog .dialog__start .form [type="tel"]{

@@ -391,21 +391,16 @@ box-shadow:         0px 0px 2px 0px rgba(50, 50, 50, 1);
 .form .error-notify{
     position: absolute;
     background: tomato;
-    top: -5px;left: 10%;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: calc((13/16)*1rem);
+	width: 100%;
+	box-sizing: border-box;
+    bottom: -11px;
+    padding: 2px;
+    border-radius: 0 0 5px 5px;
+    font-size: calc((12/16)*1rem);
     color: #fff;
+	text-align: center;
 }
 
-.form .error-notify:after{
-
-    content: '';
-    position: absolute; /* Абсолютное позиционирование */
-    left: 10px; bottom: -10px; /* Положение треугольника */
-    border: 5px solid transparent; /* Прозрачные границы */
-    border-top: 5px solid tomato; /* Добавляем треугольник */
-}
 
 
 /* область загрузки файлов */

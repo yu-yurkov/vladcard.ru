@@ -93,3 +93,231 @@
     text-align: justify;
     background: #fff;
 }
+
+.view .how-do{
+    background: #00aeff;
+    margin: 50px 0;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.view .how-do .wrap{
+    display: block;
+}
+
+.view .how-do h2{
+    font-family: 'Anglecia Pro Title';
+    font-size: calc((54/16)*1rem);
+    text-align: center;
+}
+
+.view .how-do h3{
+    font-size: calc((20/16)*1rem);
+    line-height: 24px;
+    padding-bottom: 10px;
+}
+
+.view .how-do .how-do__descript{
+    padding: 0 50px;
+}
+
+.view .how-do .how-do__descript p{
+    font-size: calc((15/16)*1rem);
+    font-weight: 300;
+    line-height: 20px;
+    text-align: justify;
+    padding: 0 0 50px 0;
+}
+
+.view .how-do .how-do__descript__text {
+    -webkit-column-count:2;
+    -moz-column-count:2;
+    column-count:2;
+    -webkit-column-gap: 100px;
+    -moz-column-gap:100px;
+    column-gap: 100px;
+    margin-top: 50px;
+
+}
+
+.view .how-do .how-do__descript__text li{
+    display: inline-block;
+}
+
+.view .how-do .how-do__video{
+    background: #fff url('../i/youtube.png') no-repeat center center;
+    min-height: 500px;
+    margin-bottom: 50px;
+    color: #000;
+}
+
+.view .how-do .how-do__reviews{
+    color: #000;
+    min-height: 50px;
+    background: #fff;
+}
+
+.types h2{
+    font-family: 'Anglecia Pro Title';
+    font-size: calc((54/16)*1rem);
+    text-align: center;
+}
+
+.types .block{
+    padding: 0;
+}
+
+.types .item-photo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.types .types__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 50px;
+}
+
+.types .types__list li{
+    border: 1px solid #e6e6e6;
+    background: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.types .types__list li a{
+    font-size: calc((20/16)*1rem);
+    font-weight: 300;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    min-height: 40px;
+}
+
+.calculator{
+    background: #fff;
+    margin: 50px 0;
+    padding: 50px 0;
+}
+
+.calculator .wrap{
+    display: block;
+}
+
+.calculator h2{
+    font-family: 'Anglecia Pro Title';
+    font-size: calc((54/16)*1rem);
+    text-align: center;
+
+}
+
+.calculator .block{
+    padding: 0;
+}
+
+.order-form h2 {
+    font-family: 'Anglecia Pro Title';
+    font-size: calc((54/16)*1rem);
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.order-form .form{
+    margin-top: 40px;
+    padding: 50px;
+    background: #fff;
+    font-weight: 300;
+    border: 1px solid #404040;
+}
+
+.order-form .block{
+    padding: 0 0 50px 0;
+}
+
+.order-form .of-descript{
+    font-size: calc((20/16)*1rem);
+    font-weight:300;
+    line-height: 32px;
+    text-align: center;
+}
+
+.order-form .of-descript b{
+    font-weight: bold;
+}
+
+.order-form .form .label{
+    font-size: calc((18/16)*1rem);
+    color: #404040;
+}
+
+.order-form .form textarea{
+    height: 121px;
+    padding: 0 10px;
+}
+
+.order-form .form .form-group{
+    margin-bottom: 25px;
+}
+
+.order-form .form .field-group{
+    margin-bottom: 25px;
+}
+
+.order-form .form .field-group li{
+    padding-left: 50px;
+}
+
+.order-form .form .submit-buttons{
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.order-form .form .submit-buttons li{
+    padding: 0;
+    text-align: center;
+}
+
+.order-form .form .data-processing{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.form .data-processing [type="checkbox"] + label:before{
+    top: 5px;
+}
+
+.order-form .form .data-processing a{
+    color: #b2b2b2;
+    font-size: calc((14/16)*1rem);
+    line-height: 15px;
+    display: inline-block;
+}
+
+.order-form .form .data-processing a:hover{
+    color: var(--red);
+}
+
+.order-form .form .submit{
+    line-height: 50px;
+    padding: 0 50px;
+    font-size: calc((18/16)*1rem);
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid #a50000;
+    background: #ff3333;
+    background: -moz-linear-gradient(top, #ff3333 0%, #cc3300 100%);
+    background: -webkit-linear-gradient(top, #ff3333 0%,#cc3300 100%);
+    background: linear-gradient(to bottom, #ff3333 0%,#cc3300 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3333', endColorstr='#cc3300',GradientType=0 );
+    text-shadow: none;
+}
+
+.order-form .form .submit:active{
+    background: #ff3333;
+    text-shadow: none;
+}

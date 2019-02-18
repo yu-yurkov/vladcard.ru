@@ -1,0 +1,187 @@
+.calculator .form{
+        width: 100%;
+        border: 1px solid #f2f2f2;
+        padding: 20px 0;
+        position: relative;
+       margin-top: 50px;
+       padding-bottom: 0;
+    }
+
+    /* верстка калькулятора */
+    .calculator fieldset{
+        margin-bottom: 20px;
+    }
+
+    .calculator fieldset:last-child{
+        margin-bottom: 0;
+    }
+
+    .calculator .form-group{
+        display: flex;
+        padding: 0 20px;
+    }
+
+    .calculator .field-name{
+        width: 100%;
+        line-height: 40px;
+        max-width: 150px;
+        font-weight: bold;
+    }
+
+    .calculator legend{
+        font-weight: bold;
+        font-size: calc((16/16)*1rem);
+        border-bottom: 1px solid #f2f2f2;
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+        width: 100%;
+        padding: 20px 0 10px 20px;
+        box-sizing: border-box;
+    }
+
+    .calculator  .form-group.checkbox{
+        display: block;
+    }
+
+    .calculator  .form-group.checkbox li{
+        padding-top: 15px;
+    }
+
+    .calculator  .form-group.checkbox li:first-child{
+        padding:0;
+    }
+
+    .calculator .basic-params{
+        padding-right: 200px;
+    }
+
+    .calculator .range{
+        width: 100%;
+        position: relative;
+    }
+
+    .calculator .val{
+        width: 100%;
+        max-width: 100px;
+        margin-right: 20px;
+    }
+
+    .calculator #quantity{
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Anglecia Pro Title';
+        font-size: calc((20/16)*1rem);
+    }
+
+    .calculator .scale{
+        font-size: calc((12/16)*1rem);
+        color: #808080;
+    }
+
+    .calculator .scale li{
+        position:absolute;
+    }
+
+    .calculator .scale li:first-child{
+        bottom: 0;
+        left: 0;
+    }
+
+    .calculator .scale li:last-child{
+        bottom: 0;
+        right: 0;
+    }
+
+   .calculator .scale li:nth-child(2){
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .calculator .checkbox-group{
+         -webkit-column-count:3;
+        -moz-column-count:3;
+        column-count:3;
+        column-rule: 1px solid #f2f2f2;
+        font-size: calc((14/16)*1rem);
+    }
+
+    .calculator .checkbox-group>li{
+        padding: 0 20px;
+        padding-top: 1px;
+        line-height: 34px;
+    }
+
+    .calculator .form [type="checkbox"] + label:before{
+        top: -2px;
+    }
+
+
+    /* результат расчета */
+    .calculator .calc-result{
+    width: 200px;
+        background: #f8f8f8;
+        border: 1px solid #f2f2f2;
+        border-right: 0;
+        border-top: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .calc-result dl{
+        padding-top: 5px;
+    }
+
+    .calc-result dt{
+        font-size: calc((14/16)*1rem);
+        text-transform: uppercase;
+        font-weight:300;
+        text-align: center;
+        margin-bottom: 5px;
+        padding-top: 20px;
+    }
+
+    .calc-result dd{
+        font-family: 'Anglecia Pro Title';
+        font-size: calc((40/16)*1rem);
+        padding-bottom: 20px;
+        text-align: center;
+        border-bottom: 1px solid #f2f2f2;
+    }
+
+    .calc-result dd span{
+        font-size: calc((24/16)*1rem);
+    }
+
+    .calc-result #price-of-one{
+        color: #009411;
+    }
+
+    .calc-result #total{
+        font-family: 'Roboto';
+        font-size: calc((24/16)*1rem);
+    }
+
+    .calc-result .send-app{
+        padding: 20px;
+    }
+    .calc-result .send-app .button{
+        width: 100%;
+        text-align: center;
+        color: #fff;
+    border: 1px solid #a50000;
+    background: #ff3333;
+    background: -moz-linear-gradient(top, #ff3333 0%, #cc3300 100%);
+    background: -webkit-linear-gradient(top, #ff3333 0%,#cc3300 100%);
+    background: linear-gradient(to bottom, #ff3333 0%,#cc3300 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3333', endColorstr='#cc3300',GradientType=0 );
+    text-shadow: none;
+    }
+
+    .calc-result .send-app .button:active{
+    background: #ff3333;
+}
+
+

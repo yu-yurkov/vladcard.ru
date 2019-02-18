@@ -1,0 +1,105 @@
+/* подвал */
+.footer{
+    background: #fff;
+}
+
+.footer .wrap{
+    display: block;
+}
+
+.footer .footer_menu{
+
+    display: flex;
+    justify-content: center;
+}
+
+.footer .block{
+    padding: 50px 0;
+    padding-bottom: 15px;
+    padding-top: 70px;
+    background: url('../i/logo-footer.png') no-repeat;
+
+    background-position: right 0 bottom 50px;
+}
+
+.footer .footer_menu > li{
+    padding: 0 15px;
+}
+
+.footer .footer_menu>li:first-child{
+    background: #fafafa;
+    height:40px;
+    position: relative;
+    padding-top: 15px;
+    margin-top: -16px;
+    border: 1px solid #f2f2f2;
+    border-bottom: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.footer .services_menu{
+     -webkit-column-count:3;
+    -moz-column-count:3;
+    column-count:3;
+    column-rule: 1px solid #f2f2f2;
+    margin: 0 auto;
+    border: 1px solid #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    margin-top: -1px;
+    background: #fafafa;
+    border-radius: 10px;
+    font-size: calc((12/16)*1rem);
+}
+
+
+.footer .services_menu a{
+    color: #000;
+    text-decoration: none;
+    line-height: 20px;
+}
+
+.footer .services_menu a:hover{
+    color: var(--red);
+}
+
+
+.footer .contacts{
+    font-size: calc((14/16)*1rem);
+    font-weight: 300;
+    color: #808080;
+    line-height: 20px;
+    text-align: center;
+    margin: 40px auto;
+    margin-bottom: 20px;
+}
+
+.footer .public{
+    display: flex;
+    margin: 0 15px;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 30px
+}
+
+.footer .public li{
+    margin: 0 10px;
+}
+
+.footer .terms{
+    display: flex;
+    justify-content: center;
+    font-size: calc((12/16)*1rem);
+    font-weight: 300;
+    color: #808080;
+}
+
+.footer .terms li{
+    margin: 0 10px;
+}
+
+footer .data-collection {
+   font-size: calc((12/16)*1rem);
+    font-weight: 300;
+    text-align: center;
+}

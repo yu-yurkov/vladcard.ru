@@ -1,0 +1,22 @@
+.page-title .wrap{
+    display: block;
+}
+
+.page-title .first-screen.block{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.page-title .first-screen .fs-descript{
+    font-size: calc((30/16)*1rem);
+    font-weight: 300;
+    margin-top: 36px;
+    line-height: 40px;
+}
+
+.page-title h1{
+    font-family: 'Anglecia Pro Title';
+    font-size: calc((54/16)*1rem);
+    vertical-align: baseline;
+
+}

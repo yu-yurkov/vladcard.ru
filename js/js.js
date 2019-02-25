@@ -2,7 +2,25 @@
 // A $( document ).ready() block.
 $( document ).ready(function() {
 
-        $('[type="tel"]').mask("+7 (999) 999-99-99");  
+    // якорь
+    $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 800);
+                    return false;
+                }
+            }
+        });
+    });
+
+
+
+    $('[type="tel"]').mask("+7 (999) 999-99-99");
 
 
     // валидация формы обратной связи

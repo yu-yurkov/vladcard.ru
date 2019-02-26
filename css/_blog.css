@@ -18,5 +18,90 @@
     font-family: 'Anglecia Pro Title';
     font-size: calc((54/16)*1rem);
     vertical-align: baseline;
+}
 
+
+.blog-item{
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+.blog-item .item-photo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.blog-item-descript{
+    display: flex;
+    margin-top: 40px;
+}
+
+.blog .listing .blog-item:nth-child(even) .blog-item-descript {
+    flex-direction: row-reverse;
+}
+
+.blog .listing .blog-item:nth-child(even) .blog-item-descript li:last-child {
+    margin: 0;
+    margin-right: 50px;
+}
+
+.blog-item-descript>li{
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 50px;
+}
+
+.blog-item-descript li:first-child{
+    margin-left: 0;
+}
+
+.blog-item-title h2{
+    margin-bottom: 10px;
+}
+
+.blog-item-title h2 a{
+    color: #000;
+    text-decoration: none;
+    font-size: calc((24/16)*1rem);
+}
+
+.blog-item-title h2 a:hover{
+    color: var(--red);
+}
+
+.blog .pubdate{
+    color:#808080;
+    font-size: calc((18/16)*1rem);
+    font-weight: 300;
+}
+
+.blog-item-descript .blog-item-descript-text{
+    font-size: calc((18/16)*1rem);
+    font-weight: 300;
+    line-height: 26px;
+}
+
+
+/* */
+
+.pg{
+    background: #fff; margin-bottom:50px;
+}
+
+.pg a{
+    font-size:  calc((20/16)*1rem);
+    padding: 5px 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.pg div a {
+    font-size:  calc((18/16)*1rem);
+    text-decoration: underline;
+}
+
+.pg #ls {
+    padding: 5px 10px;
+    background: #ededed;
+    padding-top: 5px;
 }

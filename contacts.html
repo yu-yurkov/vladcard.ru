@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Блог Владкарда</title>
+    <title>Контакты - Владкард</title>
     <link rel="stylesheet" href="css/style.css" media="all">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/fotorama.js"></script>
@@ -40,7 +40,7 @@
     </header>
 
 
-    <div class="blog">
+    <div class="contacts">
 
         <section class="page-title">
 
@@ -48,8 +48,8 @@
 
                 <div class="first-screen block">
 
-                    <h1>Блог Владкарда</h1>
-                    <p class="fs-descript">Интересное описание, пара предложений. Контент маркетинг для разогрева клиента</p>
+                    <h1>Контакты</h1>
+                    <!--<p class="fs-descript">Приходите в гости, пишите, звоните. С удовольствием вам ответим :)</p>-->
 
                 </div>
 
@@ -57,103 +57,68 @@
 
         </section>
 
-        <section class="listing">
-
-                <div class="block blog-item">
-
-                    <div class="blog-item-title">
-                        <h2><a href="#">О процессе создания пластиковых карт в нашей мастерской</a></h2>
-                        <p class="pubdate">16 декабря 2018 г.</p>
-                    </div>
-
-                    <ul class="blog-item-descript">
-                        <li class="blog-item-descript-text">Цветопроба заключается в тестовой печати макета на обычной бумаге. Это делается на разных видах принтеров с целью «попасть в цвет» установить интенсивность заливки. Наша конечная цель – максимально приблизить то, что мы печатаем к тому, что мы видим на экране мониторов. На этапе цветопробы необходимо также исключить программные «косяки» на макете – ни чего ли не обрежется при вырубке?</li>
-                        <li class="blog-item-descript-photo"><div class="item-photo"><a href="#"><img src="photo/1.jpg"></a></div></li>
+        <section class="contacts__list">
+            <div class="wrap">
+                <div class="block">
+                    <ul class="contacts__list__view">
+                        <li><b>Адрес:</b> 690002, г. Владивосток, <br>ул. Карла Либкнехта 10А, офис 6</li>
+                        <li><b>Режим работы:</b> с 9:00 до 17:00 часов <br> cуббота и воскресенье &mdash; выходной.</li>
+                        <li><b>Телефон:</b> +7 (423) 2-488-471</li>
+                        <li><b>Электронная почта:</b> info@vladcard.ru</li>
+                        <li><b>Мы в соц. сетях:</b>
+                            <ul class="public">
+                                <li><a href="#"><img src="i/youtube-footer.png" alt="#" /></a></li>
+                                <li><a href="#"><img src="i/instagram.png" alt="#" /></a></li>
+                                <li><a href="#"><img src="i/vk.png" alt="#" /></a></li>
+                                <li><a href="#"><img src="i/facebook.png" alt="#" /></a></li>
+                            </ul>
+                        </li>
                     </ul>
 
-                </div>
 
-                <div class="block blog-item">
 
-                    <div class="blog-item-title">
-                        <h2><a href="#">О процессе создания пластиковых карт в нашей мастерской</a></h2>
-                        <p class="pubdate">16 декабря 2018 г.</p>
-                    </div>
+                    <form class="form feedback">
 
-                    <ul class="blog-item-descript">
-                        <li class="blog-item-descript-text">Цветопроба заключается в тестовой печати макета на обычной бумаге. Это делается на разных видах принтеров с целью «попасть в цвет» установить интенсивность заливки. Наша конечная цель – максимально приблизить то, что мы печатаем к тому, что мы видим на экране мониторов. На этапе цветопробы необходимо также исключить программные «косяки» на макете – ни чего ли не обрежется при вырубке?</li>
-                        <!--<li class="blog-item-descript-photo"><div class="item-photo"><a href="#"><img src="photo/1.jpg"></a></div></li>-->
-                    </ul>
+                        <div class="form-group">
+                            <label class="label" for="fio">Ваше имя:</label>
+                            <input type="text" name="fio" id="fio" value="" placeholder="" required="required">
+                        </div>
 
-                </div>
 
-                <div class="block blog-item">
+                        <div class="form-group">
+                            <ul class="field-group">
+                                <li>
+                                    <label class="label" for="phone">Телефон:</label>
+                                    <input type="tel" name="phone" id="phone" value="" placeholder="" required="required">
+                                </li>
+                                <li>
+                                    <label class="label" for="email">E-mail:</label>
+                                    <input type="email" name="email" id="email" value="" placeholder="">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form-group">
+                            <label class="label" for="message">Сообщение:</label>
+                            <textarea name="message" id="message" required="required" placeholder="Введите сообщение"></textarea>
+                        </div>
 
-                    <div class="blog-item-title">
-                        <h2><a href="#">О процессе создания пластиковых карт в нашей мастерской</a></h2>
-                        <p class="pubdate">16 декабря 2018 г.</p>
-                    </div>
+                        <div class="submit-buttons">
+                            <input type="submit" name="send-form" class="button submit" id="sendFeedback" value="Отправить сообщение" />
+                        </div>
 
-                    <ul class="blog-item-descript">
-                        <li class="blog-item-descript-text">Цветопроба заключается в тестовой печати макета на обычной бумаге. Это делается на разных видах принтеров с целью «попасть в цвет» установить интенсивность заливки. Наша конечная цель – максимально приблизить то, что мы печатаем к тому, что мы видим на экране мониторов. На этапе цветопробы необходимо также исключить программные «косяки» на макете – ни чего ли не обрежется при вырубке?</li>
-                        <li class="blog-item-descript-photo"><div class="item-photo"><a href="#"><img src="photo/1.jpg"></a></div></li>
-                    </ul>
+                    </form>
 
-                </div>
 
-                <div class="block blog-item">
-
-                    <div class="blog-item-title">
-                        <h2><a href="#">О процессе создания пластиковых карт в нашей мастерской</a></h2>
-                        <p class="pubdate">16 декабря 2018 г.</p>
-                    </div>
-
-                    <ul class="blog-item-descript">
-                        <li class="blog-item-descript-text">Цветопроба заключается в тестовой печати макета на обычной бумаге. Это делается на разных видах принтеров с целью «попасть в цвет» установить интенсивность заливки. Наша конечная цель – максимально приблизить то, что мы печатаем к тому, что мы видим на экране мониторов. На этапе цветопробы необходимо также исключить программные «косяки» на макете – ни чего ли не обрежется при вырубке?</li>
-                        <li class="blog-item-descript-photo"><div class="item-photo"><a href="#"><img src="photo/1.jpg"></a></div></li>
-                    </ul>
-
-                </div>
-
-                <div class="block blog-item">
-
-                    <div class="blog-item-title">
-                        <h2><a href="#">О процессе создания пластиковых карт в нашей мастерской</a></h2>
-                        <p class="pubdate">16 декабря 2018 г.</p>
-                    </div>
-
-                    <ul class="blog-item-descript">
-                        <li class="blog-item-descript-text">Цветопроба заключается в тестовой печати макета на обычной бумаге. Это делается на разных видах принтеров с целью «попасть в цвет» установить интенсивность заливки. Наша конечная цель – максимально приблизить то, что мы печатаем к тому, что мы видим на экране мониторов. На этапе цветопробы необходимо также исключить программные «косяки» на макете – ни чего ли не обрежется при вырубке?</li>
-                        <li class="blog-item-descript-photo"><div class="item-photo"><a href="#"><img src="photo/1.jpg"></a></div></li>
-                    </ul>
 
                 </div>
 
 
-
-
-
-            <!-- постраничность -->
-            <div class="pg block">
-                <a href="?page=3">&larr; назад</a>
-                <a href="?page=5">вперёд &rarr;</a>
-                <div>
-
-                    <a href="?page=1">1</a>
-                    <a href="?page=2">2</a>
-                    <a href="?page=3">3</a>
-
-                    <span id="ls">4</span>
-
-                    <a href="?page=5">5</a>
-                    <a href="?page=6">6</a>
-                    <a href="?page=7">7</a>
-                    <a href="?page=8">8</a>
-                    (страниц: 8, публикаций: 75)
+                <div class="block scheme">
+                    <div class="item-photo">
+                        <img src="i/map.jpg" alt="карта проезда" />
+                    </div>
                 </div>
             </div>
-
-
         </section>
 
     </div>

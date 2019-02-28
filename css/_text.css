@@ -1,0 +1,42 @@
+/* */
+.text__content.block{
+    background: #fff;
+    margin-bottom: 50px;
+}
+
+.text__content{
+    font-size: calc((18/16)*1rem);
+    font-weight: 300;
+    line-height: 180%;
+    text-align: justify;
+}
+
+.text__content .bold{
+    font-weight: 400;
+}
+
+.text__content h2{
+    font-size: calc((28/16)*1rem);
+    margin: 20px 0;
+}
+
+.text__content p{
+    margin-bottom: 1rem;
+}
+
+.text__content p:last-child{
+    margin: 0;
+}
+
+.text__content .item-photo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text__content .item-photo {
+    background: none;
+    border: 1px solid #000;
+    margin-bottom: 1rem;
+    padding: 0;
+    line-height: 0;
+}

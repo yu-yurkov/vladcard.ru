@@ -53,7 +53,8 @@ a:hover{
 .header .menu > li > a{
     line-height: 100px;
     display: block;
-    font-size: calc((22/16)*1rem);
+    /*font-size: calc((22/16)*1rem);*/
+    font-size: 1.4vw;
     color: #000;
     text-decoration: none;
 }

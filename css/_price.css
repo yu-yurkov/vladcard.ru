@@ -1,0 +1,7 @@
+.price .calculator, .price .calculator .form{
+    margin: 0;
+}
+
+.price .order-form{
+    padding-top: 50px;
+}

@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&subset=cyrillic-ext');
-@import url('_reset.css');
-@import url('_main.css');
-@import url('_header.css');
+
+
 @import url('_view.css');
 @import url('_blog.css');
 @import url('_contacts.css');
 @import url('_text.css');
-@import url('_modal.css');
-@import url('_footer.css');
+@import url('_price.css');
+@import url('_order.css');
+
+@import url('reset.css');
+@import url('main.css');
+@import url('header.css');
+@import url('modal.css');
+@import url('footer.css');
 @import url('fotorama.css');
 @import url('form.css');
 @import url('calculator.css');

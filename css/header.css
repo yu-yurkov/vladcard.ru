@@ -114,6 +114,17 @@ a:hover{
     background: var(--grey);
 }
 
+.header .menu__order-button{
+    padding-top: 24px
+}
+
+
+.main .header .menu__order-button a{
+    line-height: 50px;
+    padding: 0 30px;
+    border: 1px solid var(--red);
+}
+
 .header .phone{
     white-space: pre;
     font-size: calc((18/16)*1rem);

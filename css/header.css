@@ -55,6 +55,7 @@ a:hover{
     display: block;
     /*font-size: calc((22/16)*1rem);*/
     font-size: 1.4vw;
+    white-space: nowrap;
     color: #000;
     text-decoration: none;
 }

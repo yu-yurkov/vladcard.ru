@@ -23,25 +23,59 @@
     }
 
     .column{
-        background: #00afea;
-        margin: 0 1px;
+        padding: 0;
+    }
+
+    .header .menu{
+        margin: 0 2%;
+    }
+
+    .header .callback{
+        margin: 0 2%;
+    }
+
+    .header .menu>li:first-child{
+        margin-left:2%;
+    }
+
+    .header .menu>li{
+        margin: 0 2%;
+    }
+
+    .header .menu>li>a{
+        line-height: normal;
+        font-size: calc((20/16)*1rem);
     }
 </style>
-
+<!--TODO адаптировать верхнее меню под ширину 1000 пикс. Заказать звонок сделать значком как авторизоваться с телефонной трубкой
+    уменьшить шрифты
+-->
 <div class="main">
 
     <header class="header">
         <div class="wrap">
 
-            <div class="column logo">&nbsp;</div>
+            <div class="column logo"><a href="#"><img src="i/logo.png" alt="Владкард" /></a></div>
 
             <ul class="menu column">
+                <li><a href="#">Что мы делаем?</a>
+                    <ul>
+                        <li><a href="#">Пластиковые карты</a></li>
+                        <li><a href="#">Магниты</a></li>
+                        <li><a href="#">Бейджи</a></li>
+                        <li><a href="#">Номерки, шильды</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Стоимость</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li class="menu__order-button"><a href="#">Заказать</a></li>
                 &nbsp;
             </ul>
 
-            <div class="column phone">&nbsp;</div>
-            <div class="column callback">&nbsp;</div>
-            <div class="column login">&nbsp;</div>
+            <div class="column phone"><span class="city">г. Владивосток</span> <a href="tel:+74322488471">+7 (423) 2-488-471</a></div>
+            <div class="column callback"><a href="#">Заказать звонок</a></div>
+            <div class="column login"><a href="#">вход</a></div>
 
         </div>
     </header>

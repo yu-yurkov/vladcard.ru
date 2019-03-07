@@ -46,6 +46,33 @@
         line-height: normal;
         font-size: calc((20/16)*1rem);
     }
+
+    @media (max-width: 1200px) {
+
+        .header .menu>li>a,
+        .header .phone
+        {
+            font-size: calc((16/16)*1rem);
+        }
+
+        .header .callback{
+            font-size: calc((14/16)*1rem);
+        }
+
+        .header .logo{
+            min-width: 80px;
+        }
+
+        .header .logo img{
+            width: 100%;
+            heigth: auto;
+            max-width: 100px;
+        }
+
+
+    }
+
+
 </style>
 <!--TODO адаптировать верхнее меню под ширину 1000 пикс. Заказать звонок сделать значком как авторизоваться с телефонной трубкой
     уменьшить шрифты

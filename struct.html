@@ -48,6 +48,9 @@
 
 
     @media (min-width: 980px) and (max-width: 1200px) {
+        .header .menu{
+            display:flex;
+        }
 
         .header .menu>li>a,
         .header .phone
@@ -71,6 +74,11 @@
     }
 
     @media (min-width: 650px) and (max-width:980px){
+
+        .header .menu{
+            display:flex;
+        }
+
 
         .header{
             height: 80px;
@@ -113,7 +121,7 @@
 
     }
 
-    @media (max-width: 650px){
+    @media (min-width:10px) and (max-width: 650px){
 
         .header .logo{
             width: 80px;
@@ -184,9 +192,8 @@
             background-color: #fff;
         }
 
-        /* navigation */
+         /*navigation*/
         .header .menu{
-            display: block;
             background: #00aeff;
             position: fixed;
             top: 0;
@@ -245,7 +252,7 @@
 
         </div>
     </header>
-
+<!-- TODO скрывать и показывать шторку сменой классов -->
 
     <div class="view">
 
@@ -266,7 +273,7 @@
 
 
 
-
+    <div class="overlay"></div>
 </div>
 
 

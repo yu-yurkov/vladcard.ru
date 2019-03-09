@@ -2,6 +2,23 @@
 // A $( document ).ready() block.
 $( document ).ready(function() {
 
+
+    $('.header').on('click','.menu-button', function (e) {
+
+        // кнопка закрыть
+        if(!$('div').is(".close-menu")){
+            $('.header .menu').append('<div class="close-menu"><a href="#">close</a></div>')
+        }
+
+        $('.header .menu, .overlay').show();
+    })
+
+    $('.main').on('click','.overlay, .close-menu',function (e) {
+        $('.header .menu, .overlay').hide();
+    })
+
+
+
     // якорь
     $(function() {
         $('a[href*="#"]:not([href="#"])').click(function() {

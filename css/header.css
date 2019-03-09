@@ -36,6 +36,10 @@ a:hover{
     width: auto;
 }
 
+.header .menu-button{
+    display: none;
+}
+
 .header .menu{
     display: flex;
     width: 100%;
@@ -115,6 +119,8 @@ a:hover{
     color:var(--red);
     background: var(--grey);
 }
+
+
 
 /*.header .menu__order-button{*/
     /*padding-top: 24px*/

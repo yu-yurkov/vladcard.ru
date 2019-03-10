@@ -3,6 +3,7 @@
 $( document ).ready(function() {
 
 
+    // шторка
     $('.header').on('click','.menu-button', function (e) {
 
         // кнопка закрыть
@@ -10,11 +11,18 @@ $( document ).ready(function() {
             $('.header .menu').append('<div class="close-menu"><a href="#">close</a></div>')
         }
 
-        $('.header .menu, .overlay').show();
+        $('.overlay').show();
+        $('.header .menu').toggleClass('show-menu');
     })
 
     $('.main').on('click','.overlay, .close-menu',function (e) {
-        $('.header .menu, .overlay').hide();
+
+        if($('div').is(".close-menu")){
+            $('.close-menu').remove();
+        }
+
+        $('.overlay').hide();
+        $('.header .menu').toggleClass('show-menu');
     })
 
 

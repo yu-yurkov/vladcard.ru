@@ -14,209 +14,10 @@
 <body>
 
 <style>
-    .main{
-        min-width: auto;
-    }
-    .wrap{
-        min-width: auto;
-        padding: 0 2.5%;
-    }
-
-    .column{
-        padding: 0;
-    }
-
-    .header .menu{
-        margin: 0 2%;
-    }
-
-    .header .callback{
-        margin: 0 2%;
-    }
-
-    .header .menu>li:first-child{
-        margin-left:2%;
-    }
-
-    .header .menu>li{
-        margin: 0 2%;
-    }
-
-    .header .menu>li>a{
-        font-size: calc((20/16)*1rem);
-    }
 
 
-    @media (min-width: 980px) and (max-width: 1200px) {
-        .header .menu{
-            display:flex;
-        }
-
-        .header .menu>li>a,
-        .header .phone
-        {
-            font-size: calc((16/16)*1rem);
-        }
-
-        .header .callback{
-            font-size: calc((14/16)*1rem);
-        }
-
-        .header .logo{
-            min-width: 80px;
-        }
-
-        .header .logo img{
-            width: 100%;
-            height: auto;
-            max-width: 100px;
-        }
-    }
-
-    @media (min-width: 650px) and (max-width:980px){
-
-        .header .menu{
-            display:flex;
-        }
 
 
-        .header{
-            height: 80px;
-            margin-bottom: 55px;
-        }
-
-        .header .wrap{
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .header .logo{
-            width: 80px;
-        }
-
-        .header .logo img{
-            width: 100%;
-            height: auto;
-            max-width: 100px;
-        }
-
-        .header .menu{
-            position: absolute;
-            top: 80px;
-            left: -2%;
-            right:-2%;
-            background: #fff;
-            justify-content: center;
-            border-top: 1px solid #f7f7f7;
-        }
-
-        .header .menu ul{
-            top: 54px;
-        }
-
-        .header .menu>li>a{
-            line-height: 54px;
-        }
-
-
-    }
-
-    @media (min-width:10px) and (max-width: 650px){
-
-        .header .logo{
-            width: 80px;
-        }
-
-        .header .logo img{
-            width: 100%;
-            height: auto;
-            max-width: 100px;
-        }
-
-        .header .menu{
-            display: none;
-        }
-
-        .header .wrap{
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .header .callback{
-            display: none;
-        }
-
-        .header .phone{
-            white-space: normal;
-        }
-
-        .header .phone .city{
-            display: none;
-        }
-
-        .header .phone a{
-            background: var(--grey);
-            border-radius: 50%;
-            background-image: url('css/icon/phone-call.svg');
-            background-size: 25px auto;
-            background-repeat: no-repeat;
-            background-position: center center;
-            font-size: 0;
-            width: 50px;
-            height: 50px;
-            display: block;
-        }
-
-        .header .phone a:hover{
-            background-color: #fff;
-        }
-
-        .header .menu-button{
-            display: block;
-        }
-
-        .header .menu-button a{
-            background: var(--grey);
-            border-radius: 50%;
-            background-image: url('css/icon/menu-button.svg');
-            background-size: 25px auto;
-            background-repeat: no-repeat;
-            background-position: center center;
-            font-size: 0;
-            width: 50px;
-            height: 50px;
-            display: block;
-        }
-
-        .header .menu-button a:hover{
-            background-color: #fff;
-        }
-
-         /*navigation*/
-        .header .menu{
-            background: #00aeff;
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            left: -2%;
-            width: 75%;
-            z-index: 9999;
-            padding: 25px 0 0 25px;
-        }
-
-        .header .menu>li>a{
-            line-height: 35px;
-            font-size: calc((16/16)*1rem);
-            color: #fff;
-        }
-
-        .header .menu li ul{
-            display: block;
-            all: unset;
-
-        }
-
-    }
 
 
 </style>
@@ -252,12 +53,22 @@
 
         </div>
     </header>
-<!-- TODO скрывать и показывать шторку сменой классов -->
+
 
     <div class="view">
 
         <div class="wrap">
-            view content
+            <div class="first-screen block">
+                <h1>Изготовление пластиковых карт</h1>
+                <p class="fs-descript">Для привлечения и удержания клиентов вашего бизнеса.
+                    Изготовим качественно и в срок. Любой тираж. </p>
+
+                <ul class="anchors">
+                    <li><a href="#types">Виды пластиковых карт</a></li>
+                    <li><a href="#calculator">Расчитать цену</a></li>
+                    <li><a href="#send-order">Отправить заявку</a></li>
+                </ul>
+            </div>
         </div>
 
 

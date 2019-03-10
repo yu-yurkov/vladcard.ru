@@ -36,6 +36,9 @@ a:hover{
     width: auto;
 }
 
+
+
+
 .header .menu-button{
     display: none;
 }
@@ -43,21 +46,22 @@ a:hover{
 .header .menu{
     display: flex;
     width: 100%;
+    margin: 0 2%;
 }
 
 .header .menu > li{
-    margin: 0 15px;
+    margin: 0 2%;
     position: relative;
 }
 
 .header .menu > li:first-child{
-    margin-left: 0;
+    margin-left:2%;
 }
 
 .header .menu > li > a{
     line-height: 100px;
     display: block;
-    font-size: calc((22/16)*1rem);
+    font-size: calc((20/16)*1rem);
     /*font-size: 1.4vw;*/
     white-space: nowrap;
     color: #000;
@@ -150,6 +154,10 @@ a:hover{
     font-weight: bold;
     color: #000;
     text-decoration: none;
+}
+
+.header .callback{
+    margin: 0 2%;
 }
 
 .header .callback a{

@@ -193,6 +193,54 @@
         background-color: #fff;
     }
 
+    .main .block{
+        width: unset;
+    }
+
+    section .wrap{
+        display: unset;
+    }
+
+    .main h1, html .main h2{
+        font-size: calc((45/16)*1rem);
+    }
+
+    .main .block{
+        padding: 50px 0;
+    }
+
+    .main .first-screen .fs-descript{
+        font-size: calc((24/16)*1rem);
+        line-height: 35px;
+    }
+
+    .main .first-screen .anchors{
+        display: block;
+    }
+    
+    .main .first-screen .anchors li{
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+    }
+
+    .main .anchors li:last-child{
+        margin: unset;
+    }
 
 
+    .main .block.service-description{
+        font-size: calc((18/16)*1rem);
+        font-weight: 300;
+    }
+
+    .main .how-do .how-do__descript__text{
+        column-count: unset;
+    }
+
+    .main .types__list{
+        grid-template-columns: 1fr 1fr;
+    }
 }

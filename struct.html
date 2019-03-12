@@ -229,6 +229,119 @@
 
         </section>
 
+        <section class="calculator">
+            <div class="wrap">
+                <div class="block">
+                    <a name="calculator"></a>
+                    <h2>Стоимость пластиковых карт</h2>
+                    <form class="form">
+
+                        <fieldset class="basic-params">
+
+                            <div class="form-group">
+
+                                <div class="field-name">
+                                    Тираж
+                                </div>
+                                <div class="val"><input type="number" name="quantity" id="quantity" value="1000"></div>
+                                <div class="range">
+                                    <input id="range" type="range" min="1" max="10000" step="1" value="1000">
+                                    <ul class="scale">
+                                        <li>1</li>
+                                        <li>5000</li>
+                                        <li>10000</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <div class="field-name">
+                                    Цветность
+                                </div>
+
+                                <ul class="radio-group">
+                                    <li><input name="color" type="radio" id="c-3" value="2" class="c_colors"><label for="c-3">4+4</label></li>
+                                    <li><input name="color" type="radio" id="c-2" value="1" class="c_colors"><label for="c-2">4+1</label></li>
+                                    <li><input name="color" type="radio" id="c-1" value="0" class="c_colors" checked="checked"><label for="c-1">4+0</label></li>
+                                </ul>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <div class="field-name">
+                                    Пластик
+                                </div>
+
+                                <ul class="radio-group">
+                                    <li><input name="plastic" type="radio" value="0" id="p-1" checked="checked" class="c_colored"><label for="p-1">Белый</label></li>
+                                    <li><input name="plastic" type="radio" value="1" id="p-2"><label for="p-2" class="c_colored">Золото</label></li>
+                                    <li><input name="plastic" type="radio" value="2" id="p-3"><label for="p-3" class="c_colored">Серебро</label></li>
+                                    <li><input name="plastic" type="radio" value="3" id="p-4"><label for="p-4" class="c_colored">Перламутр</label></li>
+                                    <li><input name="plastic" type="radio" value="4" id="p-5"><label for="p-5" class="c_colored">Прозрачный</label></li>
+                                </ul>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <div class="field-name">
+                                    Поверхность
+                                </div>
+
+                                <ul class="radio-group">
+                                    <li><input name="surface" type="radio" value="0" id="s-1" checked="checked" class="c_textured"><label for="s-1">Глянец</label></li>
+                                    <li><input name="surface" type="radio" value="1" id="s-2" class="c_textured"><label for="s-2">Матовая</label></li>
+                                    <li><input name="surface" type="radio" value="2" id="s-3" class="c_textured"><label for="s-3">Супер-матовая</label></li>
+                                </ul>
+
+                            </div>
+                        </fieldset>
+
+
+                        <fieldset>
+                            <legend>Выбор персонализации</legend>
+
+                            <ul class="checkbox-group">
+                                <li><input type="checkbox" id="c_magnet"><label for="c_magnet">магнитная полоса</label></li>
+                                <li><input type="checkbox" id="c_variable"><label for="c_variable">печать нумерации</label></li>
+                                <li><input type="checkbox" id="c_barcode"><label for="c_barcode">печать штрих-кода</label></li>
+                                <li><input type="checkbox" id="c_emboss"><label for="c_emboss">эмбоссирование</label></li>
+                                <li><input type="checkbox" id="c_typing"><label for="c_typing">типирование</label></li>
+                                <li><input type="checkbox" id="c_chip" class="chip-group"><label for="c_chip">чип EM-Marin</label></li>
+                                <li><input type="checkbox" id="c_chip_mifare_1k" class="chip-group"><label for="c_chip_mifare_1k">чип Mifare 1K (S50)</label></li>
+                                <li><input type="checkbox" id="c_chip_mifare_4k" class="chip-group"><label for="c_chip_mifare_4k">чип Mifare 4K (S70) оригинал</label></li>
+                                <li><input type="checkbox" id="c_chip_mifare_ultralight" class="chip-group"><label for="c_chip_mifare_ultralight">чип Mifare Ultralight EV1 оригинал</label></li>
+                                <li><input type="checkbox" id="c_chip_icode" class="chip-group"><label for="c_chip_icode">чип I-CODE SLIX 1K</label></li>
+                                <li><input type="checkbox" id="c_foil"><label for="c_foil">тиснение фольгой</label></li>
+                                <li><input type="checkbox" id="c_pack"><label for="c_pack">упаковка в пакетик</label></li>
+                            </ul>
+
+                        </fieldset>
+
+                        <fieldset class="calc-result">
+
+                            <dl>
+                                <dt>Стоимость карты</dt>
+                                <dd id="price-of-one"><b>9,<span>00</span></b> <span>₽</span></dd>
+
+                                <dt>Весь тираж</dt>
+                                <dd id="total"><b>27 000,<span>00</span></b> ₽</dd>
+                            </dl>
+
+                            <div class="send-app">
+                                <a href="#send-order" class="button submit">Отправить заявку</a>
+                            </div>
+
+                        </fieldset>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
 
 
 

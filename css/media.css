@@ -261,9 +261,21 @@
         display:unset;
     }
 
-    .form .form-group:nth-child(3) .radio-group{
-        display: unset;
+    .form .form-group [type="radio"] + label{
+        padding: 0;
+        width: 100%;
+        text-align: center;
     }
+
+
+    .form .form-group:nth-child(3) [type="radio"] + label{
+        font-size: calc((12/16)*1rem);
+    }
+
+    .form .form-group:nth-child(4) [type="radio"] + label{
+        font-size: calc((12/16)*1rem);
+    }
+
 
     .form .basic-params{
         padding: 0 20px;
@@ -288,5 +300,44 @@
 
     .form .calc-result{
         width: unset;
+    }
+
+    .form .radio-group {
+        display: flex;
+    }
+    .form .radio-group li{
+        width: 100%;
+    }
+
+    /*форма*/
+    .main .form .field-group{
+        display: unset;
+
+    }
+
+    .order-form .form .field-group li{
+        padding: 0;
+    }
+
+    .order-form .form{
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    .order-form .block{
+        padding: unset;
+    }
+
+    .order-form .form .label{
+        margin-top: 20px;
+    }
+
+    .order-form .form .data-processing{
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .order-form .form .form-group{
+        padding-bottom: 20px;
     }
 }

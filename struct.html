@@ -342,6 +342,65 @@
             </div>
         </section>
 
+        <section class="order-form">
+            <div class="wrap">
+                <div class="block">
+                    <a name="send-order"></a>
+                    <h2>Отправить заявку</h2>
+                    <p class="of-descript">Опишите задачу, мы расчитаем стоимость и сроки изготовления тиража.</p>
+                    <p class="of-descript">При необходимости изготовим для вас <b>бесплатные образцы</b></p>
+
+                    <form class="form">
+
+                        <ul class="field-group">
+                            <li>
+
+                                <div class="form-group">
+                                    <label class="label" for="fio">Ваше имя:</label>
+                                    <input type="text" name="fio" id="fio" value="" placeholder="" >
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label class="label" for="phone">Телефон: <span class="red-star">*</span></label>
+                                    <input type="tel" name="phone" id="phone" value="" placeholder="" required="required">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group">
+                                    <label class="label" for="descript">Примечание:</label>
+                                    <textarea name="descript" id="descript" placeholder="Опишите вашу задачу"></textarea>
+                                </div>
+                            </li>
+                        </ul>
+
+
+                        <div class="form-group">
+                            <label class="label">Загрузка файлов и фото:</label>
+
+                            <div id="photouploader" class="dropzone dz-clickable" action="/cp/products/edit/8548/photoupload/" acceptedfiles="image/*">
+                                <div class="dz-default dz-message">
+                                    <span>Нажмите сюда или перетащите файлы для их загрузки</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <ul class="submit-buttons field-group">
+                            <li>&nbsp;</li>
+                            <li><input type="submit" name="send-form" class="button submit" id="sendFeedback" value="Отправить заявку" /></li>
+
+                            <li class="data-processing">
+                                <input type="checkbox" checked="checked" id="data-processing" required="required" /> <label for="data-processing"><a href="#">Согласие на обработку<br>персональных данных</a></label>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
 
 
 

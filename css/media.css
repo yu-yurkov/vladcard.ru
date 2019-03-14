@@ -72,7 +72,7 @@
 
 }
 
-@media (min-width:10px) and (max-width: 650px){
+@media (min-width:10px) and (max-width: 700px){
 
     .header .logo{
         width: 80px;
@@ -339,5 +339,33 @@
 
     .order-form .form .form-group{
         padding-bottom: 20px;
+    }
+
+
+    /*footer*/
+    .footer .footer_menu{
+        flex-wrap: wrap;
+    }
+
+    .footer .services_menu{
+        display: none;
+    }
+
+    .footer .block{
+        background-image: unset;
+    }
+
+    .footer .terms li{
+        text-align: center;
+    }
+
+
+    .footer .footer_menu li:first-child{
+        all: unset;
+        padding: 0 15px;
+    }
+
+    .footer .footer_menu>li a{
+        line-height: 35px;
     }
 }

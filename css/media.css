@@ -24,7 +24,7 @@
     }
 }
 
-@media (min-width: 650px) and (max-width:980px){
+@media (min-width: 700px) and (max-width:980px){
 
     .header .menu{
         display:flex;
@@ -67,6 +67,169 @@
 
     .header .menu>li>a{
         line-height: 54px;
+    }
+
+
+    .main .block{
+        width: unset;
+    }
+
+    section .wrap{
+        display: unset;
+    }
+
+    .main h1, html .main h2{
+        font-size: calc((45/16)*1rem);
+    }
+
+    .main .block{
+        padding: 50px 0;
+    }
+
+    .main .first-screen .fs-descript{
+        font-size: calc((24/16)*1rem);
+        line-height: 35px;
+    }
+
+
+
+
+    .main .block.service-description{
+        font-size: calc((18/16)*1rem);
+        font-weight: 300;
+    }
+
+    .main .how-do .how-do__descript__text{
+        column-count: unset;
+    }
+
+    .main .types__list{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .main .types .block{
+        padding: unset;
+    }
+
+
+    /*калькулятор*/
+    .main .calculator .block{
+        padding: unset;
+    }
+    .main .form{
+        padding: 0;
+    }
+
+    .form .form-group{
+        display:unset;
+    }
+
+    .form .form-group [type="radio"] + label{
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .form .form-group:nth-child(3) [type="radio"] + label{
+        font-size: calc((12/16)*1rem);
+    }
+
+    .form .form-group:nth-child(4) [type="radio"] + label{
+        font-size: calc((12/16)*1rem);
+    }
+
+
+    .form .basic-params{
+        padding: 0 20px;
+    }
+
+    .form .scale{
+        padding: 10px;
+    }
+
+    .form .calc-result{
+        position: unset;
+    }
+
+    .form .val{
+        margin-bottom: 15px;
+        max-width: unset;
+    }
+
+    .form .checkbox-group{
+        column-count: unset;
+    }
+
+    .form .calc-result{
+        width: unset;
+    }
+
+    .form .radio-group {
+        display: flex;
+    }
+    .form .radio-group li{
+        width: 100%;
+    }
+
+    /*форма*/
+    .main .form .field-group{
+        display: unset;
+
+    }
+
+    .order-form .form .field-group li{
+        padding: 0;
+    }
+
+    .order-form .form{
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    .order-form .block{
+        padding: unset;
+    }
+
+    .order-form .form .label{
+        margin-top: 20px;
+    }
+
+    .order-form .form .data-processing{
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .order-form .form .form-group{
+        padding-bottom: 20px;
+    }
+
+
+    /*footer*/
+    .footer .footer_menu{
+        flex-wrap: wrap;
+    }
+
+    .footer .services_menu{
+        display: none;
+    }
+
+    .footer .block{
+        background-image: unset;
+    }
+
+    .footer .terms li{
+        text-align: center;
+    }
+
+
+    .footer .footer_menu li:first-child{
+        all: unset;
+        padding: 0 15px;
+    }
+
+    .footer .footer_menu>li a{
+        line-height: 35px;
     }
 
 

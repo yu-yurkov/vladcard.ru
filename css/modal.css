@@ -13,7 +13,7 @@
     background: #fff;
     height: 400px;
     width: 400px;
-    position: absolute;
+    position: fixed;
     top:calc(50vh - 200px);
     left:calc(50vw - 200px);
     -webkit-border-radius: 10px;

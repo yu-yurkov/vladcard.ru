@@ -83,7 +83,7 @@
     }
 
     .main .block{
-        padding: 50px 0;
+        padding: 20px;
     }
 
     .main .first-screen .fs-descript{
@@ -232,6 +232,32 @@
         line-height: 35px;
     }
 
+    /* контакты */
+    .form .field-group li{
+        padding: 0;
+    }
+
+    .main .contacts .form{
+        padding: 20px;
+    }
+
+    .main .contacts .form .form-group{
+        display: block;
+
+    }
+
+    .main .contacts .form .field-group{
+        display: block;
+    }
+
+    .main .contacts .form .field-group:first-child li{
+        margin-bottom: 20px;
+    }
+
+
+    .main .modal .form .form-group{
+        display: block;
+    }
 
 }
 
@@ -369,7 +395,7 @@
     }
 
     .main .block{
-        padding: 50px 0;
+        padding: 20px;
     }
 
     .main .first-screen .fs-descript{
@@ -403,11 +429,20 @@
         column-count: unset;
     }
 
+    .view .how-do .how-do__descript{
+        padding: 20px;
+    }
+
     .main .types__list{
         grid-template-columns: 1fr 1fr;
     }
 
     .main .types .block{
+        padding: unset;
+    }
+
+    .main .view .how-do{
+        margin: unset;
         padding: unset;
     }
 
@@ -420,7 +455,7 @@
         padding: 0;
     }
 
-    .form .form-group{
+    .main .form .form-group{
         display:unset;
     }
 
@@ -530,5 +565,48 @@
 
     .footer .footer_menu>li a{
         line-height: 35px;
+    }
+
+
+    /* страница контакты */
+    .contacts .contacts__list .block{
+     display: block;
+    }
+
+    .contacts .contacts__list .contacts__list__view li{
+        text-align: center;
+    }
+
+    .contacts .contacts__list .contacts__list__view li .public{
+        justify-content: center;
+    }
+
+    .form .field-group li{
+        padding: 0;
+    }
+
+    .main .contacts .form{
+        padding: 20px;
+    }
+
+    .main .contacts .form .form-group{
+        display: block;
+
+    }
+
+    .main .contacts .form .field-group{
+        display: block;
+    }
+
+    .main .contacts .form .field-group:first-child li{
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (min-width:10px) and (max-width: 450px) {
+
+    .main .types__list li a{
+        font-size: calc((14/16)*1rem);
     }
 }

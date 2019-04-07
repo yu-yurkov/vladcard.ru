@@ -93,6 +93,8 @@ a:hover{
     background:#fff;
     max-width: 1400px;
     margin: 0 auto;
+    padding: 0 2%;
+    box-sizing: border-box;
 }
 
 .header .menu__wrap ul{
@@ -168,6 +170,14 @@ a:hover{
     display: inline-block;
     padding: 0 20px;
     border-radius: 3px;
+}
+
+.header .header__order:hover{
+    background: #c14136;
+}
+
+.header .header__order:active{
+    background: #a23329;
 }
 
 /*.header .callback a{*/

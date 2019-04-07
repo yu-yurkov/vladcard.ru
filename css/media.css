@@ -61,6 +61,10 @@
         border-top: 1px solid #f7f7f7;
     }
 
+    .header .menu>li>ul{
+        top: unset;
+    }
+
     .header .menu ul{
         top: 54px;
     }
@@ -348,7 +352,7 @@
         padding: 25px 0 0 25px;
     }
 
-    .header .menu>li>a{
+    .header .menu>li a{
         line-height: 35px;
         font-size: calc((16/16)*1rem);
         color: #fff;
@@ -357,6 +361,23 @@
     .header .menu li ul{
         display: block;
         all: unset;
+    }
+
+    .header .menu__wrap{
+        all: unset;
+    }
+
+    .header .menu__wrap img{display: none;}
+
+    .header .menu__wrap ul li{
+        all: unset;
+        display: block;
+        margin-left: 20px;
+    }
+
+    .header .menu__wrap ul li a{
+        font-size: calc((16/16)*1rem);
+        color: #fff;
     }
 
     .header .close-menu{

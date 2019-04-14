@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Изготовление пластиковых карт во Владивостоке</title>
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/fotorama.js"></script>
+    <script src="js/js.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+</head>
+<body>
+
+<div class="main">
+
+    <header class="header">
+
+        <div class="wrap">
+            <div class="column logo"><a href="#"><img src="i/logo.png" alt="Владкард" /></a></div>
+
+            <div class="column menu-button"><a href="#">показать меню</a></div>
+
+            <ul class="menu column">
+                <li><a href="#">Что мы делаем?</a>
+
+                    <ul>
+                        <li class="menu__wrap">
+
+                            <ul>
+                                <li>
+                                    <a href="#">Пластиковые карты
+                                        <img src="photo/dropmenu/plastic-card.jpg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Конверты для пластиковых карт
+                                        <img src="photo/dropmenu/envelope.jpg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Бейджи
+                                        <img src="photo/dropmenu/badge.jpg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Рекламные магниты
+                                        <img src="photo/dropmenu/magnet.jpg">
+                                    </a>
+                                </li>
+                                <li><a href="#">Номерки для гардероба
+                                    <img src="photo/dropmenu/numbers.jpg">
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="#">Офисные таблички
+                                        <img src="photo/dropmenu/nameplate.jpg">
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </li>
+                    </ul>
+
+
+                </li>
+                <li><a href="#">Стоимость</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакты</a></li>
+
+            </ul>
+
+            <div class="column phone"><span class="city">г. Владивосток</span> <a href="tel:+74322488471">+7 (423) 2-488-471</a></div>
+            <div class="column callback"><a href="#" class="header__order">Отправить заявку</a></div>
+            <div class="column login"><a href="#">вход</a></div>
+        </div>
+
+    </header>
+
+
+    <div class="view"> <!-- название шаблона -->
+
+        <section class="page-title">
+            <div class="wrap">
+
+
+                <div class="first-screen block">
+                    <h1>Конверты для пластиковых карт</h1>
+                    <p class="fs-descript">Изготавливаем отличные конверты для пластиковых карт и подарочных сертификатов. </p>
+
+                    <ul class="anchors">
+                        <li><a href="#types">Виды конвертов</a></li>
+                        <li><a href="#calculator">Расчитать цену</a></li>
+                        <li><a href="#send-order">Отправить заявку</a></li>
+                    </ul>
+                </div>
+
+                <div class="block fotorama" data-width="1000" data-ratio="1000/500" data-max-width="100%" data-nav="thumbs" data-autoplay="true">
+                    <img src="photo/photoframe/66.jpg" alt=""/>
+                    <img src="photo/photoframe/67.jpg" alt=""/>
+                    <img src="photo/photoframe/68.jpg" alt=""/>
+                    <img src="photo/photoframe/81.jpg" alt=""/>
+                    <img src="photo/photoframe/82.jpg" alt=""/>
+                    <img src="photo/photoframe/83.jpg" alt=""/>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="price">
+
+            <div class="wrap">
+                <div class="block">
+                    <a name="calculator"></a>
+                    <h2>Сколько стоят конверты?</h2>
+
+
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+        <section class="order-form">
+            <div class="wrap">
+                <div class="block">
+                    <a name="send-order"></a>
+                    <h2>Узнать точную цену и получить бесплатный образец</h2>
+                    <p class="of-descript">Опишите задачу, мы расчитаем стоимость и сроки изготовления тиража.</p>
+                    <p class="of-descript">При необходимости изготовим для вас <b>бесплатные образцы</b></p>
+
+                    <form class="form">
+
+                        <ul class="field-group">
+                            <li>
+
+                                <div class="form-group">
+                                    <label class="label" for="fio">Ваше имя:</label>
+                                    <input type="text" name="fio" id="fio" value="" placeholder="" >
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label class="label" for="phone">Телефон: <span class="red-star">*</span></label>
+                                    <input type="tel" name="phone" id="phone" value="" placeholder="" required="required">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group">
+                                    <label class="label" for="descript">Примечание:</label>
+                                    <textarea name="descript" id="descript" placeholder="Опишите вашу задачу"></textarea>
+                                </div>
+                            </li>
+                        </ul>
+
+
+                        <div class="form-group">
+                            <label class="label">Загрузка файлов и фото:</label>
+
+                            <div id="photouploader" class="dropzone dz-clickable" action="/cp/products/edit/8548/photoupload/" acceptedfiles="image/*">
+                                <div class="dz-default dz-message">
+                                    <span>Нажмите сюда или перетащите файлы для их загрузки</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <ul class="submit-buttons field-group">
+                            <li>&nbsp;</li>
+                            <li><input type="submit" name="send-form" class="button submit" id="sendFeedback" value="Отправить заявку" /></li>
+
+                            <li class="data-processing">
+                                <input type="checkbox" checked="checked" id="data-processing" required="required" /> <label for="data-processing"><a href="#">Согласие на обработку<br>персональных данных</a></label>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+
+    </div>
+
+    <footer class="footer">
+        <div class="wrap">
+            <div class="block">
+
+                <ul class="footer_menu">
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Цены</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Реквизиты</a></li>
+                    <li><a href="#">Партнёрам</a></li>
+                </ul>
+
+                <ul class="contacts">
+                    <li><address>г.Владивосток, ул. Карла Либкнехта, 10а, офис 6</address></li>
+                    <li>тел.: +7 (423) 2-488-471, e-mail: info@vladcard.ru</li>
+                    <li>&copy; 2008-2019 г. ООО &laquo;Владкард&raquo;</li>
+                </ul>
+
+                <ul class="public">
+                    <li><a href="#"><img src="i/youtube-footer.png" alt="#" /></a></li>
+                    <li><a href="#"><img src="i/instagram.png" alt="#" /></a></li>
+                    <li><a href="#"><img src="i/vk.png" alt="#" /></a></li>
+                    <li><a href="#"><img src="i/facebook.png" alt="#" /></a></li>
+                </ul>
+
+                <ul class="terms">
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                    <li><a href="#">Политика обработки персональных данных</a></li>
+                </ul>
+            </div>
+
+            <p class="data-collection">Сайт использует файлы cookies и сервис сбора технических данных его посетителей. Продолжая использовать данный ресурс, вы автоматически соглашаетесь с использованием данных технологий.</p>
+
+
+        </div>
+
+
+
+    </footer>
+
+
+    <div class="overlay"></div>
+    <div class="modal">
+        <div class="dialog">
+            <div class="dialog__start">
+
+                <h3>Хотите, мы перезвоним вам
+                    и ответим на интересующие
+                    вас вопросы?</h3>
+
+                <form action="#" class="form feedback">
+                    <div class="form-group">
+                        <label for="tel" class="label">Введите ваш телефон:</label>
+                        <input type="tel" id="tel" name="tel" required="required">
+                    </div>
+
+                    <div class="submit-button">
+                        <input type="submit" name="send-form" class="button submit" value="Заказать звонок">
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="dialog__loader">
+
+                <div class="lContainer">
+                    <div class="item-1"></div>
+                    <div class="item-2"></div>
+                    <div class="item-3"></div>
+                    <div class="item-4"></div>
+                    <div class="item-5"></div>
+                </div>
+
+            </div>
+
+            <div class="dialog__complete_success">
+
+                <div class="complete_mess">
+                    <p>Запрос удачно отправлен <br>
+                        <span>Мы перезвоним вам в ближайшее время</span>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="dialog__complete_error">
+
+                <div class="complete_mess">
+                    <p>Не удалось отправить данные<br>
+                        <span>Поробуйте еще раз или свяжитесь с нами другим способом</span>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+<script>
+
+    $('body').on('click','.callback', function(e){
+        $('.overlay, .modal').show();
+        e.preventDefault();
+    });
+
+    $('body').on('click', '.overlay', function(e){
+        $('.overlay, .modal').hide();
+    });
+
+
+
+    $('body').on('submit','.form.feedback', function(e){
+
+        let formData = $(this).serialize();
+
+        $.ajax({
+
+            type: 'post',
+            dataType: 'html',
+            url: 'ajax/callback',
+            data: formData,
+
+
+            showDialog: function(dialog){
+                $('.dialog>div').hide();
+                $('.dialog ' + dialog).show();
+                console.log("show:" + dialog);
+            },
+
+            beforeSend: function(){
+                this.showDialog('.dialog__loader');
+            },
+
+            success: function(data){
+                this.showDialog('.dialog__complete_success');
+                console.log(data);
+            },
+
+            error: function () {
+                this.showDialog('.dialog__complete_error');
+            },
+
+            complete: function(){
+                var dialog = this.showDialog;
+                setTimeout(function () {
+                    $('.modal, .overlay').hide();
+                    dialog('.dialog__start');
+                    $(".dialog input[type='tel']").val('');
+                }, 2500);
+            }
+
+        });
+
+        e.preventDefault();
+
+    });
+
+</script>
+</body>
+</html>

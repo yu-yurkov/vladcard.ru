@@ -219,6 +219,54 @@
     padding: 0;
 }
 
+/* таблица с ценами */
+.price {
+    background: #fff;
+    margin: 50px 0;
+    padding: 50px 0;
+}
+
+.price .wrap{
+    display: block;
+}
+
+.price h2{
+    font-family: 'Anglecia Pro Title';
+    font-size: calc((54/16)*1rem);
+    text-align: center;
+}
+
+.price .table{
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+/* стиль таблицы */
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    margin: 25px 0;
+}
+
+.table th, .table td{
+    border: 1px solid #e6e6e6;
+    vertical-align: middle;
+    padding: 5px;
+    text-align: center;
+}
+
+.table th{
+    background: #f7f7f7;
+}
+
+.table caption{
+    font-size: calc((28/16)*1rem);
+    margin: 20px 0;
+}
+
+/**/
+
 .order-form h2 {
     font-family: 'Anglecia Pro Title';
     font-size: calc((54/16)*1rem);

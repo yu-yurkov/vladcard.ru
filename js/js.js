@@ -104,6 +104,7 @@ function setRange(range){
 	}
 
 	function rangeFunc() {
+
 		range = document.getElementById('range').value;
 		document.getElementById("quantity").value = range;
 		setRange(range);

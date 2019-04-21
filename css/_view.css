@@ -5,20 +5,26 @@
     margin: 0 auto;
 }
 
+.view .photos
+{
+    border-top: 1px solid #e6e6e6;
+    padding: 50px 0;
+}
+
 .view .view-main .wrap{
     display: block;
 }
 
-.view .first-screen.block{
-    text-align: center;
-    padding-top: 40px;
-}
-
-.view .first-screen .fs-descript{
+.page-title .first-screen .fs-descript{
     font-size: calc((30/16)*1rem);
     font-weight: 300;
     margin-top: 36px;
     line-height: 40px;
+}
+
+.main .page-title .first-screen.block{
+    text-align: center;
+    padding: 40px 0 50px 0;
 }
 
 .view h1{
@@ -31,7 +37,7 @@
 .first-screen .anchors{
     display:inline-flex;
     border-radius: 5px;
-    margin: 35px auto 0 auto;
+    margin: 50px auto 0 auto;
     font-size: calc((18/16)*1rem);
     font-weight: 300;
 }
@@ -79,11 +85,86 @@
     color: #fff;
 }
 
+/* преимущества */
+.main .advantage{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.main .advantage li{
+    text-align: center;
+    font-size: calc((20/16)*1rem);
+    font-weight: 300;
+    line-height: 110%;
+}
+
+.main .advantage li>div{
+    padding-top: 20px;
+}
+
+/* услуги */
+.services{
+    background: #ffffff;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+.services .block{
+    padding: 0;
+}
+
+.services h2{
+    font-family: 'Anglecia Pro Title';
+    font-size: calc((54/16)*1rem);
+    text-align: center;
+}
+
+
+.services ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 35px 0;
+}
+
+.services ul li{
+    border-radius: 5px;
+    background: #f7f7f7;
+    padding: 25px;
+    -webkit-box-shadow: 1px 1px 0px 0px rgba(50, 50, 50, 0.1);
+    -moz-box-shadow:    1px 1px 0px 0px rgba(50, 50, 50, 0.1);
+    box-shadow:         1px 1px 0px 0px rgba(50, 50, 50, 0.1);
+}
+
+.services ul li a{
+    color: #000;
+    font-size: calc((18/16)*1rem);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.services ul li a:hover{
+    color: var(--red);
+}
+
+.services img{
+    margin-top: 15px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+
+
+
 .view .block.fotorama{
     padding: 0;
 }
 
-.view .block.service-description{
+.block.service-description{
     border: 1px solid #e6e6e6;
     margin-top: 48px;
     padding: 40px 50px;
@@ -94,34 +175,34 @@
     background: #fff;
 }
 
-.view .how-do{
+.how-do{
     background: #00aeff;
     margin: 50px 0;
     color: #fff;
     padding: 50px 0;
 }
 
-.view .how-do .wrap{
+ .how-do .wrap{
     display: block;
 }
 
-.view .how-do h2{
+ .how-do h2{
     font-family: 'Anglecia Pro Title';
     font-size: calc((54/16)*1rem);
     text-align: center;
 }
 
-.view .how-do h3{
+.how-do h3{
     font-size: calc((20/16)*1rem);
     line-height: 24px;
     padding-bottom: 10px;
 }
 
-.view .how-do .how-do__descript{
+.how-do .how-do__descript{
     padding: 0 50px;
 }
 
-.view .how-do .how-do__descript p{
+.how-do .how-do__descript p{
     font-size: calc((15/16)*1rem);
     font-weight: 300;
     line-height: 20px;
@@ -129,7 +210,7 @@
     padding: 0 0 50px 0;
 }
 
-.view .how-do .how-do__descript__text {
+.how-do .how-do__descript__text {
     -webkit-column-count:2;
     -moz-column-count:2;
     column-count:2;
@@ -140,18 +221,18 @@
 
 }
 
-.view .how-do .how-do__descript__text li{
+.how-do .how-do__descript__text li{
     display: inline-block;
 }
 
-.view .how-do .how-do__video{
+.how-do .how-do__video{
     background: #fff url('../i/youtube.png') no-repeat center center;
     min-height: 500px;
     margin-bottom: 50px;
     color: #000;
 }
 
-.view .how-do .how-do__reviews{
+.how-do .how-do__reviews{
     color: #000;
     min-height: 50px;
     background: #fff;
@@ -220,23 +301,23 @@
 }
 
 /* таблица с ценами */
-.price {
+.price-table {
     background: #fff;
     margin: 50px 0;
     padding: 50px 0;
 }
 
-.price .wrap{
+.price-table .wrap{
     display: block;
 }
 
-.price h2{
+.price-table h2{
     font-family: 'Anglecia Pro Title';
     font-size: calc((54/16)*1rem);
     text-align: center;
 }
 
-.price .table{
+.price-table .table{
     margin-top: 50px;
     margin-bottom: 0;
 }
@@ -261,8 +342,9 @@
 }
 
 .table caption{
-    font-size: calc((28/16)*1rem);
+    font-size: calc((20/16)*1rem);
     margin: 20px 0;
+    text-align: left;
 }
 
 /**/

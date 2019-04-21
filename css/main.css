@@ -14,7 +14,7 @@ html, body {
     position: relative;
     min-height: 100%;
     box-sizing: border-box;
-    padding-bottom: 540px;
+    padding-bottom: 360px;
     background-color: #f7f7f7;
 }
 
@@ -28,7 +28,7 @@ html, body {
 
 footer{
     background: #fafafa;
-    height: 540px;
+    height: 360px;
     position: absolute;
     left: 0;
     bottom: 0;

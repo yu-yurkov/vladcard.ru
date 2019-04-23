@@ -95,6 +95,10 @@
         line-height: 35px;
     }
 
+    .main .services ul{
+        grid-template-columns: 1fr 1fr;
+    }
+
 
 
 
@@ -445,6 +449,16 @@
         font-size: calc((18/16)*1rem);
         font-weight: 300;
     }
+
+    .main .services ul{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main .advantage{
+        grid-template-columns: 1fr 1fr;
+    }
+
+
 
     .main .how-do .how-do__descript__text{
         column-count: unset;

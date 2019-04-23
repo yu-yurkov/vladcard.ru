@@ -96,6 +96,26 @@ a:hover{
     padding: 0 2%;
     box-sizing: border-box;
 }
+.header .menu > .drop-down > a{
+    position: relative;
+    padding-right: 21px;
+}
+
+.header .menu > .drop-down > a:before{
+    content: '';
+    display: block;
+    width: 11px;
+    height:100%;
+    background-image: url('../i/drop-down.png');
+    background-repeat: no-repeat;
+    background-position: -11px center;
+    position: absolute;
+    right: 0;
+}
+
+.header .menu > .drop-down:hover > a:before {
+    background-position: 0 center;
+}
 
 .header .menu__wrap ul{
     display: grid;

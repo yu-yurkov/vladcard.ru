@@ -3,7 +3,40 @@
 $( document ).ready(function() {
 
 
-    // шторка
+
+    // отслеживание
+    $('.phone a').on('click', function(){
+        // yaCounter19307074.reachGoal('vidzhet')
+        // ga('send', 'event','button', 'vidzhet' )
+
+        console.log('vidzhet');
+    })
+
+    $('#sendFeedback').on('click', function(){
+
+
+        if($(this).parents('.contacts').length > 0){
+
+            //yaCounter19307074.reachGoal('message')
+            //ga('send', 'event','button', 'message')
+
+            console.log('message');
+        }else{
+
+            //yaCounter19307074.reachGoal('order');
+            //ga('send', 'event','button', 'order')
+
+            console.log('order');
+        }
+
+    })
+
+
+
+
+
+
+        // шторка
     $('.header').on('click','.menu-button', function (e) {
 
         // кнопка закрыть

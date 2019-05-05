@@ -88,7 +88,7 @@
 /* преимущества */
 .main .advantage{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
     margin-top: 50px;
     width: 100%;
@@ -109,7 +109,6 @@
 .services{
     background: #ffffff;
     padding: 50px 0;
-    margin-bottom: 50px;
 }
 
 .services .block{
@@ -155,6 +154,31 @@
     max-width: 100%;
     height: auto;
     border-radius: 3px;
+}
+
+/* VIDEO */
+.video{
+    background: #00aeff;
+    padding: 50px 0;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.video .block{
+    padding: 0;
+}
+
+.video h2{
+    font-family: 'Anglecia Pro Title';
+    font-size: calc((54/16)*1rem);
+    text-align: center;
+}
+
+.video__description {
+    font-size: calc((30/16)*1rem);
+    font-weight: 300;
+    margin: 25px 0 50px 0;
+    text-align: center;
 }
 
 

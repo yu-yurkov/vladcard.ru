@@ -184,6 +184,18 @@
 
         </section>
 
+        <section class="video">
+            <div class="wrap">
+                <div class="block">
+                    <h2>Рабочий процесс</h2>
+                    <p class="video__description">Видео рабочего процесса из нашего канала на youtube.</p>
+
+                    <iframe width="100%" height="500" src="https://www.youtube.com/embed/videoseries?list=PLQiYczYf3hWDiK_R7lf8DFk_HQq2p0OnQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </section>
+
 
 
 
@@ -395,6 +407,10 @@
 
 
     $('body').on('submit','.form.feedback', function(e){
+
+        //yaCounter19307074.reachGoal('zvonok')
+        //ga('send', 'event','button', 'zvonok')
+        console.log('zvonok');
 
         let formData = $(this).serialize();
 
